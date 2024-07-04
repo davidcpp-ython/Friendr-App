@@ -1,0 +1,9 @@
+<main class="main">
+    <div class="posts-container">
+        <button class="add-post-btn basic-btn" routerLink="/createPost">Add Post</button>
+        <ng-container *ngFor="let post of posts">
+            <app-post [postInput]="post"></app-post>
+        </ng-container>
+    </div>
+</main>
+<router-outlet />

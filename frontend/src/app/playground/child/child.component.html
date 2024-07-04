@@ -1,0 +1,10 @@
+<!-- Binding to ts-->
+<div class = "child">
+    <div>{{ postInput.title | titlecase }}</div>
+    
+    <div>{{ postInput.date | date }}</div>
+
+    <div> {{ postInput.description }}</div>
+
+    <button (click)="likePost()">Like</button>
+</div>

@@ -1,0 +1,24 @@
+<!-- <p>post works!</p> -->
+<div class="post">
+    <div class="post-header">
+        <div class="post-header-profile">
+            <img class="avatar" [src]="userAvatarUrl" />
+            <div class="post-user-details">
+                <div class="post-username">{{ postInput?.author }}</div>
+                <div class="post-date-created">{{ postInput.date | date }}</div>
+            </div>
+        </div>
+        <button class="following-btn">Following</button>
+        <!-- <button class="follow-btn">Follow</button> -->
+    </div>
+    <div class="post-body">
+        <img src="/assets/images/post.png" />
+        <div>
+            {{postInput.content}}
+        </div>
+        <div>
+            Likes: {{ postInput.likes.length }}
+        </div>
+    </div>
+    <div class="post-footer"></div>
+</div>
